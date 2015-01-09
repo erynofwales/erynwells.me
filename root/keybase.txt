@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/erynofwales
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://erynwells.me
+  * I am erynofwales (https://keybase.io/erynofwales) on keybase.
+  * I have a public key with fingerprint 7BDF 859E 4100 1C15 1A9F  0B11 FF6C 66F5 E56D 0154
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "7bdf859e41001c151a9f0b11ff6c66f5e56d0154",
+            "host": "keybase.io",
+            "key_id": "ff6c66f5e56d0154",
+            "uid": "e3c165de478f7fda0bc5a88a1c77bd00",
+            "username": "erynofwales"
+        },
+        "service": {
+            "hostname": "erynwells.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397745150,
+    "expire_in": 157680000,
+    "prev": "6a5ddb20f2462bdbe33cc3f196637f955d27c6f955176982c8a4f6002f70d5ff",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (Darwin)
+
+owGbwMvMwMT4Pyft69NcxhDG0we+JjEE+z9TrVZKyk+pVLKqVspOBVNpmXnpqUUF
+RZl5JUpWSuZJKWkWppapJoYGBobJhqaGiZZpBkmGhmlpZslmZmmmqaZmKQaGpiZK
+OkoZ+cUgHUBjkhKLU/Uy84FiQE58ZgpQFIv6UrBEqnGyoZlpSqqJuUWaeVpKokFS
+smmihUWiYbI50G4DA5DC4tSivMTcVJDqosq8/LTyxJzUYqVaHSWgRFlmcirI2SDb
+kRSVp+bkFOsBuTpKBUX5JfnJ+TlAmYySkgIrkMaSygKQyvLUpHioGfFJmXkpQK8D
+NZSlFhVn5ucpWRkCVSaXZIIMNTS2NDc3MTU0NdBRSq0oyCxKjc8EqTA1N7MwAAKQ
+NallQCPNEk1TUpKMDNKMTMyMklKSUo2Nk5ON0wwtzcyMzdMsTU1TjMyTzUAMQ3Mz
+SwujZItEkzQzAwOjNHODFNO0NCWQrwrz8pWsTIDOTEwHGlmcmZ6XWFJalKpUy9XJ
+JMPCwMjEwMbKBIw9HQYuTgFYnO54xP/fO0di/UeNXWuOdywK9vu1M8Ay9UHK06Bf
+W/T2p61b0n1q18TvX19/Vur29Jm4+TrnT5d9qeUXuOV2TmWLT45ZVPEgbL6frXNc
+gaWySLet3Ddf/62+a65+s9zf+K/Aq9VeKVVlyrM+s3eub//d+/yjmemXrJPRnA+s
+DdoKJturJu38a3qZ/YNvu3Dci7S1jb022w/c89XfUfqt8dO1N69N5xqY18UJ30+e
+ZXnpRN3Wpkij7BfsE4U4Pa5ZVeuFsvw5+iC5qznYK3Pr/tV26csLxdVnFH1fHKry
+RerHFA7DJKuu/b4La3OW7bu+yqdu9ueDx38tOO5WPi2nq0j71vmPd/4L+x1W/TzD
+OGu+1oTFm+rWetZez9KtEvww+/K1V2xVx0qijl2r/ZZdYdMhLLZ7g9LmBe0F85at
+C9RjzTnPo7TuWsuTq/8l7uXe4u4LeabvP5HjX6Xsin1LeOzfnYyctu5jSWL9yuOh
+4T9Xd5t7su0O8jUtOM53OX/ztYUpmrse3o1U/zlNo77+MdO9D49k/B8lb7T211F7
+V9f7Py12QybzS9kAoQMq5R2xHTfVSw0fz2bpv6Nx/ODfbR1sutbMF/4ocx+9aBl0
+t/npjE3uGYlbn/1hMbnfvLpiwoW7d3/n5tr1Psx1u/rr3/2zNpMPTcwQzOHSsFq5
+LOLyIwXth4q/N8/5LX88+O6BI453d11g25YkkBKxaW+z0Qe1VwA=
+=GRS5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/erynofwales
+
+==================================================================
+

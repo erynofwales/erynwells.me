@@ -1,0 +1,46 @@
+@import url(/styles/bootstrap/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    background-color: white;
+}
+
+#masthead {
+}
+
+#masthead h1 {
+    font-family: "Love Ya Like A Sister", Georgia, serif;
+    color: #ee2e64;
+    font-size: 60px;
+}
+
+#masthead h1 small {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 a {
+    color: inherit;
+}
+
+h1 a:hover {
+    color: inherit;
+}
+
+a {
+    color: #44accf;
+}
+
+a:hover {
+    color: #005580;
+    text-decoration: none;
+}

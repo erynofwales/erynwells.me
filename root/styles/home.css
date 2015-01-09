@@ -1,0 +1,51 @@
+@import url(/styles/main.css);
+
+#masthead {
+    margin-top: 120px;
+    padding: 60px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#masthead,
+.navi {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#masthead h1 {
+    margin-bottom: 0.25em;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 27px;
+}
+
+#key-info,
+#key-download {
+    margin-top: 27px;
+}
+
+.navi {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.navi a {
+    color: #aaa;
+}
+
+.navi a:hover {
+    color: #005580;
+}
+
+code {
+    background: white;
+    border: 0;
+    font-size: 80%;
+    color: #aaa;
+}

@@ -1,0 +1,132 @@
+@import url(/styles/bootstrap/bootstrap.min.css);
+@import url(/styles/main.css);
+@import url(/styles/prettify-solarized.css);
+@import url(http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 a {
+    color: inherit;
+}
+
+h1 a:hover {
+    color: inherit;
+}
+
+h1 small, h2 small {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 12px;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+.nav-inner {
+    border-bottom: 1px solid #ddd;
+}
+
+#masthead {
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+#masthead h1 {
+    font-size: 48px;
+}
+
+.post {
+    font-size: 10pt;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.post:last-child {
+    margin-bottom: 0;
+}
+
+.post header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.post header h1 {
+    font-family: "Love Ya Like A Sister", Georgia, serif;
+    line-height: 22px;
+}
+
+.post header .date {
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+    color: #666;
+    font-size: 12pt;
+}
+
+.post h1 {
+    font-size: 16pt;
+}
+
+.post h1 small {
+    font-size: 9pt;
+    white-space: nowrap;
+}
+
+.post.photo  header h1,
+.post.photoset header h1 {
+    display: block;
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.post code {
+    white-space: nowrap;
+    color: inherit;
+    background-color: inherit;
+}
+
+.post footer .nav li a {
+    padding: 0px;
+    margin-right: 4px;
+}
+
+.post footer .label {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+}
+
+.post footer .nav li a:hover {
+    background-color: inherit;
+}
+
+/*
+ * Pagination
+ */
+
+#pagination {
+    padding: 18px 0;
+    border-top: 1px solid #eee;
+}
+
+#pagination #previous {
+    float: left;
+}
+
+#pagination #next {
+    float: right;
+}
