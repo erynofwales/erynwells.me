@@ -1,103 +1,88 @@
 <!DOCTYPE html>
+<!-- vim: set tw=120 --!>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./styles/resume.css" />
   <title>Eryn Wells' Résumé</title>
-  <style type="text/css" media="all">
-    body {
-      font-family: sans-serif;
-    }
-    #resume {
-      width: 800px;
-      margin: auto;
-    }
-    h3, h4 {
-      margin-bottom: 2px;
-    }
-    .subtitle {
-      font-size: 85%;
-      font-style: italic;
-    }
-    h3 .location,
-    h4 .location {
-      font-weight: normal;
-      font-size: 80%;
-    }
-    h3 .location::before,
-    h4 .location::before {
-      content: ", ";
-    }
-    ul {
-      margin: 0;
-      padding-left: 1em;
-    }
-    li {
-      list-style: none;
-      margin: 0;
-    }
-    li::before {
-      content: "– ";
-    }
-    dt {
-      font-style: bold;
-    }
-  </style>
+  <style type="text/css" media="all"></style>
 </head>
 <body>
+<main class="wrapper"> 
   <div id="resume">
     <header>
-    <h1>Eryn Wells</h1>
+      <h1><a href="./index.html">Eryn Wells</a></h1>
     </header>
     <section id="experience">
       <h2>Experience</h2>
       <section id="apple" class="job">
-        <h3>Apple<span class="location">Cupertino, CA</span></h3>
-        <div class="subtitle">iOS Accessibility Engineer</div>
-        <div class="date">Jaunary 2016 &ndash; Present</div>
+        <header>
+          <h3>Apple<span class="location">Cupertino, CA</span></h3>
+          <div class="date">2016 to present</div>
+          <div class="subtitle">iOS Accessibility Engineer</div>
+        </header>
         <ul>
           <li>Implemented several new features and improvements to core accessible technologies on iOS</li>
-          <li>Participated in developer outreach at conferences (WWDC) and onsite events to promote the value of making software accessible and answer developer questions</li>
-          <li>Worked with app teams within Apple to enhance their support for our platform, and drove the implementation of many improvements to first party apps</li>
+          <li>Drove the implementation of many improvements to first party apps, and worked with app teams within Apple
+            to enhance their support for our platform.</li>
+          <li>Participated in developer outreach at conferences (WWDC) and onsite events to promote the value of making
+            software accessible and answer developer questions</li>
         </ul>
       </section>
       <section id="lumos" class="job">
-        <h3>Lumos Labs<span class="location">San Francisco, CA</span></h3>
-        <div class="subtitle">iOS Engineer, Lumosity</div>
-        <div class="date">December 2014 &ndash; January 2016</div>
+        <header>
+          <h3>Lumos Labs<span class="location">San Francisco, CA</span></h3>
+          <div class="date">2014 to 2016</div>
+          <div class="subtitle">iOS Engineer, Lumosity</div>
+        </header>
         <ul>
-          <li>Migrated from a proprietary navigation implementation in C++ to UIKit components and established patterns for further development</li>
-          <li>Refactored two important screens of the core Lumosity experience from C++ to UIKit</li>
+          <li>Migrated from a proprietary navigation implementation in C++ to UIKit components and established patterns
+            for further development</li>
+          <li>Refactored several components of the core Lumosity experience from C++ to UIKit</li>
           <li>Authored process document describing our code review and QA approval process for patches</li>
           <li>Implemented 1v1 competition feature, which had a greater than 50% engagement rate</li>
         </ul>
       </section>
       <section id="vmware" class="job">
-        <h3>VMware<span class="location">Palo Alto, CA</span></h3>
-        <div class="subtitle">Member of Technical Staff</div>
-        <h4>Fusion, Product Development</h4>
-        <div class="date">April 2012 &ndash; November 2014</div>
+        <header>
+          <h3>VMware<span class="location">Palo Alto, CA</span></h3>
+          <div class="subtitle">Member of Technical Staff</div>
+        </header>
+        <header>
+          <h4>Fusion, Product Development</h4>
+          <div class="date">2012 to 2014</div>
+        </header>
         <ul>
-          <li>Restructured keyboard input handling to improve code architecture and accommodate multiple clients of our OS X UI library</li>
-          <li>Redesigned outdated first-run and trial experiences to improve initial impressions, and make it easier to try Fusion</li>
-          <li>Exposed Cocoa configuration UI for a USB device arbitration library written in C (through our platform-independent C++ library, and OS X-specific Objective-C library)</li>
+          <li>Restructured keyboard input handling to improve code architecture and accommodate multiple clients of our
+            OS X UI library</li>
+          <li>Redesigned outdated first-run and trial experiences to improve initial impressions, and make it easier to
+            try Fusion</li>
+          <li>Exposed Cocoa configuration UI for a USB device arbitration library written in C (through our
+            platform-independent C++ library, and OS X-specific Objective-C library)</li>
         </ul>
-        <h4>View, Desktop Infrastructure Group</h4>
-        <div class="date">February 2011 &ndash; April 2012</div>
+        <header>
+          <h4>View, Desktop Infrastructure Group</h4>
+          <div class="date">2011 to 2012</div>
+        </header>
         <ul>
-          <li>Implemented stabilization fixes in the View Deployment Tool (VDT), which is responsible for deploying instances of the View product during automated testing</li>
-          <li>Engineered an extensive rewrite of VDT to incorporate a new deployment backend relying on VMware vCloud Director, and to allow greater flexibility in how deployments are created</li>
+          <li>Engineered an extensive rewrite of VDT to incorporate a new deployment backend relying on VMware vCloud
+            Director, and to allow greater flexibility in how deployments are created</li>
+          <li>Implemented stabilization fixes in the View Deployment Tool (VDT), which is responsible for deploying
+            instances of the View product during automated testing</li>
           <li>Completed and stabilized system tests designed to exercise several of View’s provisioning features</li>
         </ul>
       </section>
     </section>
     <section id="education">
-      <h3>Education</h3>
-      <h4>Oberlin College<span class="location">Oberlin, OH</span></h4>
-      <div class="subtitle">Bachelor of Arts in Computer Science with Honors, GPA 3.62 of 4.0</div>
-      <div class="date">August 2006 &ndash; May 2010</div>
+      <h2>Education</h2>
+      <header>
+        <h3>Oberlin College<span class="location">Oberlin, OH</span></h3>
+        <div class="date">2006 to 2010</div>
+        <div class="subtitle">Bachelor of Arts in Computer Science with Honors, GPA 3.62 of 4.0</div>
+      </header>
     </section>
     <section id="skills">
-      <h3>Skills &amp; Interests</h3>
+      <h2>Skills &amp; Interests</h2>
       <div class="subtitle">Skills ranked in order of experience</div>
       <dl>
         <dt>Languages</dt>
@@ -107,13 +92,14 @@
         <dt>Tools</dt>
         <dd>Vim, Git, Xcode, Perforce, Review Board</dd>
         <dt>Spoken Languages</dt>
-        <dd>Spanish, French</dd>
+        <dd>English, Spanish, French</dd>
         <dt>Conferences</dt>
-        <dd> WWDC 2016, WWDC 2015, WWDC 2014, PyCon 2012, She's Geeky 2012</dd>
+        <dd>WWDC 2016, WWDC 2015, WWDC 2014, PyCon 2012, She's Geeky 2012</dd>
         <dt>Interests</dt>
         <dd>Calligraphy, cooking, gardening, piano, programming languages, graphics, yoga</dd>
       </dl>
     </section>
   </div>
+</main>
 </body>
 </html>

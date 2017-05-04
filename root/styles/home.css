@@ -1,51 +1,43 @@
 @import url(./main.css);
 
-#masthead {
+body {
+    /* Flex box: center everything vertically */
+    align-items: center;
+}
+
+.wrapper {
     margin-top: 120px;
-    padding: 60px 0;
-    text-align: center;
+    padding: 60px 0 8px 0;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 
-#masthead,
-.navi {
+.wrapper {
     width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#masthead h1 {
-    margin-bottom: 0.25em;
-}
-
-p {
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 27px;
-}
-
-#key-info,
-#key-download {
-    margin-top: 27px;
-}
-
-.navi {
-    margin-top: 4px;
     text-align: center;
 }
 
-.navi a {
-    color: #aaa;
+header {
+    margin-bottom: 60px;
 }
 
-.navi a:hover {
-    color: #005580;
+footer {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-    background: white;
-    border: 0;
-    font-size: 80%;
+.nav {
+    text-align: center;
+}
+
+.nav a {
     color: #aaa;
+    font-weight: 200;
+    margin-right: 0.75em;
+    -webkit-transition: color 100ms;
+    transition: color 100ms;
+}
+
+.nav a:hover {
+    color: #3486ff;
 }

@@ -1,0 +1,94 @@
+@import url(./main.css);
+
+.wrapper {
+    margin-top: 28px;
+}
+
+#resume {
+    width: 640px;
+}
+
+#resume h1 a {
+    text-decoration: none;
+}
+
+.job header {
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+h2 {
+    margin-bottom: 4px;
+}
+
+h3, dt {
+    font-size: 1.17em;
+}
+
+h3, h4 {
+    margin-bottom: 2px;
+}
+
+header h3,
+header h4 {
+    float: left;
+}
+
+header .date,
+header .date {
+    float: right;
+}
+
+.date {
+    font-size: 80%;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.subtitle {
+    clear: both;
+    font-size: 85%;
+    font-style: italic;
+}
+
+h3 .location,
+h4 .location {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+h3 .location:before,
+h4 .location:before {
+    content: ", ";
+}
+
+#resume > section {
+    margin-bottom: 2em;
+}
+
+ul {
+    clear: both;
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    text-indent: -0.80em;
+}
+
+li:before {
+    content: "– ";
+}
+
+dt {
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+dd {
+    margin: 0;
+    margin-left: 1em;
+}
