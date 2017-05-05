@@ -5,7 +5,8 @@
 }
 
 #resume {
-    width: 640px;
+    width: 100%;
+    margin: 8px;
 }
 
 #resume h1 a {
@@ -91,4 +92,12 @@ dt {
 dd {
     margin: 0;
     margin-left: 1em;
+}
+
+/* Desktops */
+@media only screen and (min-width: 768px) {
+    #resume {
+        width: 640px;
+        margin: 0;
+    }
 }

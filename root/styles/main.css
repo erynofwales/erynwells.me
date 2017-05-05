@@ -14,15 +14,12 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    /* Flex box: center everything horizontally */
-    display: flex;
-    justify-content: center;
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 h1 {
     font-family: "Love Ya Like A Sister", Georgia, serif;
-    font-size: 4.5em;
+    font-size: 4em;
     margin-bottom: 0.25em;
 }
 
@@ -53,4 +50,22 @@ a {
     text-decoration: none;
     -webkit-transition: color 100ms;
     transition: color 100ms;
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+}
+
+/* Desktops */
+@media only screen and (min-width: 768px) {
+    body {
+        /* Flex box: center everything horizontally */
+        display: flex;
+        justify-content: center;
+        font-size: 10pt;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
 }
