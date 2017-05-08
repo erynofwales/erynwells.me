@@ -3,7 +3,8 @@
 html,
 body,
 div,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+header, footer {
     margin: 0;
     padding: 0;
 }
@@ -14,6 +15,9 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    /* Flex box: center everything horizontally */
+    display: flex;
+    justify-content: center;
     font-size: 10pt;
 }
 
@@ -52,20 +56,38 @@ a {
     transition: color 100ms;
 }
 
-/* Tablets */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 500px) {
+    header {
+        margin-bottom: 20px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 8px;
+    }
 }
 
-/* Desktops */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
+    header {
+        margin-bottom: 60px;
+    }
+
+    .wrapper {
+        width: 480px;
+        padding: 60px 0 8px 0;
+    }
+}
+
+@media only screen and (min-width: 760px) {
     body {
-        /* Flex box: center everything horizontally */
-        display: flex;
-        justify-content: center;
-        font-size: 10pt;
+        font-size: 13pt;
     }
 
     h1 {
         font-size: 4em;
+    }
+
+    .wrapper {
+        width: 640px;
     }
 }

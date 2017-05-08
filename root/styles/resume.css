@@ -1,11 +1,6 @@
 @import url(./main.css);
 
 .wrapper {
-    margin-top: 28px;
-}
-
-#resume {
-    width: 100%;
     margin: 8px;
 }
 
@@ -94,10 +89,26 @@ dd {
     margin-left: 1em;
 }
 
-/* Desktops */
-@media only screen and (min-width: 768px) {
-    #resume {
+@media only screen and (max-width: 500px) {
+    .wrapper {
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    header {
+        margin-bottom: 0;
+    }
+
+    .wrapper {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .wrapper {
         width: 640px;
         margin: 0;
+        padding: 60px 0;
     }
 }

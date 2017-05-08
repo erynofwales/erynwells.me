@@ -1,19 +1,16 @@
 @import url(./main.css);
 
+html, body {
+    height: 100%;
+}
+
+body {
+    /* Flex box: center everything vertically */
+    align-items: center;
+}
+
 .wrapper {
-    width: 100%;
-    margin: 20px 8px 20px 8px;
-    padding: 10px 0 2px 0;
     text-align: center;
-}
-
-header {
-    margin-bottom: 20px;
-}
-
-footer {
-    margin: 0;
-    padding: 0;
 }
 
 .nav {
@@ -32,25 +29,9 @@ footer {
     color: #3486ff;
 }
 
-/* Desktops */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
     .wrapper {
-        margin-top: 120px;
-        padding: 60px 0 8px 0;
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
-    }
-
-    .wrapper {
-        width: 640px;
-    }
-
-    body {
-        /* Flex box: center everything vertically */
-        align-items: center;
-    }
-
-    header {
-        margin-bottom: 60px;
     }
 }
