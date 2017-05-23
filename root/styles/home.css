@@ -13,11 +13,11 @@ body {
     text-align: center;
 }
 
-.nav {
+nav {
     text-align: center;
 }
 
-.nav a {
+nav a {
     color: #aaa;
     font-weight: 200;
     margin-right: 0.75em;
@@ -25,13 +25,6 @@ body {
     transition: color 100ms;
 }
 
-.nav a:hover {
+nav a:hover {
     color: #3486ff;
-}
-
-@media only screen and (min-width: 760px) {
-    .wrapper {
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-    }
 }
