@@ -110,7 +110,8 @@ dd {
     display: inline;
 }
 
-#side-projects button:hover, #side-projects .selected {
+#side-projects button:hover,
+#side-projects .selected {
     background-color: #3486ff;
     color: #eee;
 }
