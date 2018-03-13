@@ -167,6 +167,10 @@ dd {
         margin-bottom: 0px;
     }
 
+    a {
+        color: black;
+    }
+
     #side-projects .buttons {
         display: none;
     }
