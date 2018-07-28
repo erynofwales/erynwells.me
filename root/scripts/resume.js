@@ -14,12 +14,11 @@ const sideProjects = {
     },
 
     populate(projectsElement) {
-        const btn = projectsElement.querySelector('button[data-category="all"]');
-        this._setupAllButton(btn);
-
-        projectsElement.querySelectorAll('button[data-category]').forEach(function(btn) {
+        projectsElement.querySelectorAll('button[data-category]').forEach((btn) => {
             let category = btn.dataset.category;
-            if (category != null && category != 'all') {
+            if (category == 'all') {
+                sideProjects._setupAllButton(btn);
+            } else if (category != null) {
                 sideProjects.categoryButtons.push(btn);
                 sideProjects._setupCategoryButton(btn);
             }
@@ -42,44 +41,36 @@ const sideProjects = {
 
     _setupAllButton(btn) {
         this.allButton = btn;
-
         btn.addEventListener('click', function() {
-            let toggledOn = this.classList.contains('selected');
-            if (!toggledOn) {
-                return;
-            }
-
-            sideProjects.categoryButtons.forEach((cBtn) => {
-                cBtn.classList.remove('selected');
+            this.classList.add('selected');
+            sideProjects.categoryButtons.forEach((btn) => {
+                btn.classList.remove('selected');
             });
-
             sideProjects.updateProjectVisibility();
         });
     },
 
     _setupCategoryButton(btn) {
         btn.addEventListener('click', function() {
-            const stat = sideProjects.categoryStatus();
-            let noCategoriesSelected = Object.values(stat).every((v) => !v);
-            let allCategoriesSelected = Object.values(stat).every((v) => v);
-            if (noCategoriesSelected || allCategoriesSelected) {
-                sideProjects.allButton.click();
-            } else {
+            this.classList.toggle('selected');
+
+            if (this.classList.contains('selected')) {
                 sideProjects.allButton.classList.remove('selected');
+            } else {
+                const stat = sideProjects.categoryStatus();
+                const noCategoriesSelected = Object.values(stat).every((v) => !v);
+                const allCategoriesSelected = Object.values(stat).every((v) => v);
+                if (noCategoriesSelected || allCategoriesSelected) {
+                    sideProjects.allButton.classList.add('selected');
+                }
             }
+
             sideProjects.updateProjectVisibility();
         });
     },
 };
 
 window.addEventListener('load', function() {
-    // Set up toggle buttons.
-    document.querySelectorAll('button.toggle').forEach((btn) => {
-        btn.addEventListener('click', function(event) {
-            event.currentTarget.classList.toggle('selected');
-        });
-    });
-
     const projectsElement = document.querySelector('#side-projects');
     sideProjects.populate(projectsElement);
     sideProjects.allButton.click();
