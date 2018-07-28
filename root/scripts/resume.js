@@ -44,17 +44,14 @@ const sideProjects = {
         this.allButton = btn;
 
         btn.addEventListener('click', function() {
-            var didRemove = false
-            sideProjects.categoryButtons.forEach((cBtn) => {
-                if (cBtn.classList.contains('selected')) {
-                    didRemove = true;
-                    cBtn.classList.remove('selected');
-                }
-            });
-
-            if (didRemove) {
-                this.classList.add('selected');
+            let toggledOn = this.classList.contains('selected');
+            if (!toggledOn) {
+                return;
             }
+
+            sideProjects.categoryButtons.forEach((cBtn) => {
+                cBtn.classList.remove('selected');
+            });
 
             sideProjects.updateProjectVisibility();
         });
@@ -62,8 +59,6 @@ const sideProjects = {
 
     _setupCategoryButton(btn) {
         btn.addEventListener('click', function() {
-            this.classList.toggle('selected');
-
             const stat = sideProjects.categoryStatus();
             let noCategoriesSelected = Object.values(stat).every((v) => !v);
             let allCategoriesSelected = Object.values(stat).every((v) => v);
@@ -78,6 +73,13 @@ const sideProjects = {
 };
 
 window.addEventListener('load', function() {
+    // Set up toggle buttons.
+    document.querySelectorAll('button.toggle').forEach((btn) => {
+        btn.addEventListener('click', function(event) {
+            event.currentTarget.classList.toggle('selected');
+        });
+    });
+
     const projectsElement = document.querySelector('#side-projects');
     sideProjects.populate(projectsElement);
     sideProjects.allButton.click();
